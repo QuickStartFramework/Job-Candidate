@@ -1,0 +1,5 @@
+Hi {!QSF_RFL_Position__c.Hiring_Manager__c},
+
+The deadline for position {!QSF_RFL_Position__c.Name} is only 10 days away ({!QSF_RFL_Position__c.Deadline__c}).
+
+Regards

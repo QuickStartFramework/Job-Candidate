@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>QSF_RFL_Position__c.Hiring_Manager__c</field>
+    </columns>
+    <columns>
+        <field>QSF_RFL_Position__c.Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>QSF_RFL_Position__c.Status__c</column>
+            <operator>equals</operator>
+            <value>Open</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>QSF_RFL_Position__c.Geography__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>QSF RFL Positions Expiring This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QSF_RFL_Position__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>QSF_RFL_Position__c.Deadline__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

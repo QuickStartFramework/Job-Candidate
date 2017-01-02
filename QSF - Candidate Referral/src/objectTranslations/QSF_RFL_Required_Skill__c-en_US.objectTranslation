@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Required Skill</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Required Skills</value>
+    </caseValues>
+    <fields>
+        <label><!-- Mandatory --></label>
+        <name>Mandatory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>Position__c</name>
+        <relationshipLabel><!-- Required Skills --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skill --></label>
+        <name>Skill__c</name>
+        <relationshipLabel><!-- Required Skills --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Required Skill Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Skill Identifier --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
